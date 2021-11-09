@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <header>
+        <h1>Cadastro de DEVs</h1>
+        <p>Complete suas informações</p>
+    </header>
+    <main>
+        <form action="">
+            <fieldset>
+                <div>
+                    <label for="">Nome: </label>
+                    <input type="text" name="nome" id="nome">
+                </div>
+                <div>
+                    <label for="">Sobrenome: </label>
+                    <input type="text" name="sobrenome" id="sobrenome">
+                </div>
+            </fieldset>
+            <div>
+                <label for="">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="">De qual lado da aplicação você desenvolve?</label>
+                <label for="">
+                    <input type="radio" name="devweb" value="frontend">Front-end
+                </label>
+                <label for="">
+                    <input type="radio" name="devweb" value="backend">Back-end
+                </label>
+                <label for="">
+                    <input type="radio" name="devweb" value="fullstack">Fullstack
+                </label>
+            </div>
+
+            <div>
+                <label for="">Senioridade</label>
+                <select id="senioridade">
+                    <option selected disabled value="">Selecione</option>
+                    <option>Junior</option>
+                    <option>Pleno</option>
+                    <option>Senior</option>
+                </select>
+            </div>
+            <fieldset>
+                <div>
+                    <label for="">Selecione as tecnologias que você utiliza:</label>
+                    <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
