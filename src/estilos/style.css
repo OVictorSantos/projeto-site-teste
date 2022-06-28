@@ -26,7 +26,6 @@ main a:hover {
 }
 
 nav {
-    width: 265px;
     background-color:#2E0D70;/*Outra opção de cor: #2712DE*/
     box-shadow:  0px 7px 7px rgba(0, 0, 0, 0.192);
     border-radius: 5px;
@@ -34,7 +33,7 @@ nav {
 
 nav > a {
     color: #5c7fc5;
-    margin: 2px;
+    margin: 35px;
     padding: 1px;
     border-radius: 5px;
     text-decoration: none;
