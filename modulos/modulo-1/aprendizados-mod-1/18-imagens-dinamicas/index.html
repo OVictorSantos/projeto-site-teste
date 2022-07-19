@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>tente abrir esse site em vários dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 760px)" srcset="src/imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1060px)" srcset="src/imagens/foto-m.png" type="image/png">
+        <img src="src/imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <h1>Reprodizindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="src/musicas/Space-Age.mp3" controls autoplay loop></audio>
+    <audio preload="metadata" controls>
+        <source src="src/musicas/guanacast-33.mp3" type="audio/mpeg">
+        <source src="src/musicas/guanacast-33.ogg" type="audio/ogg">
+        <source src="src/musicas/guanacast-33.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="src/musicas/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+
+    </audio>
+
+    <h3>Anotações</h3>
+    <p>MP3, WAV, OGG são outros formatos de áudio WAV é mais pesado</p>
+    <p>Na parte de preload ele tem 3 opções, auto só considera que carrega o site quando carrega todo o áudio, metadata carrega só as informações principais tipo nome e duração e nome não carrega nada</p>
+    
+    
+    <a href="../../index.html"><img src="../../../../src/imagens/btn-back.png" alt="Voltar"></a>
+</body>
+</html>

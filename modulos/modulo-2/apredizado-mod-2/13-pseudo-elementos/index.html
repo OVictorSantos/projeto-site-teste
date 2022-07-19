@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elementos</title>
+    <style>
+        body{/*Pseudo elementos pode agir na classe elemento id ele meche no conteudo periferico do elemento*/
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: darkred;
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        
+        a:active{
+            color: yellow;
+        }
+
+        .especial{
+            background-color: rgb(255, 140, 140);
+        }
+
+
+        .especial::before{
+            content: ' ⇒';
+        }
+        .especial::after{
+            content: ' ⇐';
+        }
+
+        /*
+            #     = id
+            .     = class
+            :     = pseudo-class
+            ::    = pseudo-element
+            >     = clildren
+        */
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/OVictorSantos" target="_blank" class="especial">Repositório do GitHub</a></li>
+        <li><a href="https://www.youtube.com/channel/UCxI1Iktfcezv0TOb5N35Eeg/featured" target="_blank">Canal no YouTube</a></li>
+        <li><a href="https://www.instagram.com/victorx_x/" target="_blank" class="especial">Intagram</a></li>
+    </ul>
+
+    <p><a href="http://erikasarti.com/html/dingbats-simbolos-desenhos/" target="_blank">Link do site</a> dos simbolos</p>
+    <p><a href="../../index.html"><img src="../../../../src/imagens/btn-back.png" alt="Voltar"></a></p>
+</body>
+</html>
